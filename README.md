@@ -5,9 +5,18 @@
 
 ###Installation
 
+####Dependencies
+
+Requires the following Python packages:
+* NumPy
+* SciPy
+* Pandas
+* Seaborn
+
 ###Usage
 
 ###Future Work
+
 * Neaten up the page parsing - possibly use a third party package
 * More visualisation
 
