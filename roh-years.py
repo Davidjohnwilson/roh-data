@@ -45,9 +45,9 @@ def printpiecenamestofile(path_to_filename):
     myfile.close
 
 #printchoreonamestofile('./piecenames.txt')
-dateslist = get_piece_dates()
-print(get_piece_years(dateslist))
-print(get_piece_months(dateslist))
+# dateslist = get_piece_dates()
+# print(get_piece_years(dateslist))
+# print(get_piece_months(dateslist))
 
 
 def get_piece_times():
@@ -58,15 +58,31 @@ def get_piece_times():
         for l in results.readlines():
             try:
                 if l.count('Matinee')>0:
-                    timeslist[0] = timeslist[0]+1
+                    timeslist[0] += 1
                 elif l.count('Evening')>0:
-                    timeslist[1] = timeslist[1]+1
+                    timeslist[1] += 1
             except UnicodeDecodeError:
                 print "Ignoring UnicodeDecodeError"
         print("Page " + str(i+1) + " parsed!")
         results.close()
     return timeslist
 
-times = get_piece_times()
-print("Matinee: " + str(times[0]))
-print("Evening: " + str(times[1]))
+# times = get_piece_times()
+# print("Matinee: " + str(times[0]))
+# print("Evening: " + str(times[1]))
+
+
+def get_year_month_dists(dateslist):
+    monthDict = {'January':1,'February':2,'March':3,'April':4,'May':5,'June':6,'July':7,'August':8,'September':9,'October':10,'November':11,'December':12}
+    year_month_list = [[int(x.split(" ")[-1]),monthDict[x.split(" ")[1]]] for x in dateslist]
+    year_dists=[]
+    for i in xrange(1957,2013):
+        year_dists.append([i,0,0,0,0,0,0,0,0,0,0,0,0])
+    for ym in year_month_list:
+        year_counter = ym[0]-1957
+        year_dists[year_counter][ym[1]] += 1
+    return year_dists
+
+dateslist = get_piece_dates()
+print(get_year_month_dists(dateslist))
+
