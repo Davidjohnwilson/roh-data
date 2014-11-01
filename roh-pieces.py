@@ -22,7 +22,7 @@ def get_piece_names():
     return nameslist
 
 def printpiecenamestofile(path_to_filename):
-    piece_list=get_choreo_names()
+    piece_list=get_piece_names()
     myfile=open(path_to_filename,'w')
     for pname in piece_list:
         myfile.write(pname+'\n')
