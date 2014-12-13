@@ -1,0 +1,60 @@
+:root {
+  --djw-red:     rgb(148,  17,   0);
+  --djw-blue:    rgb(118, 214, 255);
+  --djw-orange:  rgb(244, 172,   0);
+}
+
+.carousel-indicators {
+  bottom:-40px;
+}
+.carousel-inner {
+   margin-bottom:40px;
+}
+
+/*#dev-panel {
+  background-color: var(--djw-orange);
+}
+#research-panel {
+  background-color: var(--djw-blue);
+}
+#review-panel {
+  background-color: var(--djw-red);
+}*/
+body { padding-bottom: 70px; }
+
+
+@font-face {
+font-family: 'GulimFontFamily';
+src: url('/assets/fonts/gulim.eot?#iefix') format('embedded-opentype'),
+     url('/assets/fonts/gulim.woff') format('woff'),
+     url('/assets/fonts/gulim.ttc')  format('truetype'),
+     url('/assets/fonts/gulim.svg#svgFontName') format('svg');
+}
+
+.jumbotron {
+    /*margin-bottom: 0px;*/
+    background-image: url(assets/images/panel-background.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    /*color: white;*/
+    /*text-shadow: black 0.3em 0.3em 0.3em;*/
+}
+
+.jumbotron-mainpage {
+  padding-top: 185px;
+}
+
+.jumbotron-mainpage h1 {
+  font-size: 40px;
+}
+
+.jumbotron-subpage {
+  padding-top: 200px;
+}
+
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 1) !important;
+    border-color: rgba(0, 0, 0, 1) !important;
+}

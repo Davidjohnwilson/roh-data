@@ -1,0 +1,26 @@
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.choreoschart div {
+  background-color: #b7001c;
+}
+
+.pieceschart div {
+  background-color: #b7001c;
+
+}
+
+.segmentschart div {
+  background-color: #b7001c;
+
+}
+
+
+
+body { padding-bottom: 70px; }

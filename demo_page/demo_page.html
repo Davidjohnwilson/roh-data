@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>David John Wilson: Developer, Researcher, Reviewer.</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="../assets/css/cosmo-bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap theme -->
+  <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+<link href="../theme.css" rel="stylesheet">
+<link href="chartstheme.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../bower_components/bootstrap/assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body role="document">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand active" href="../index.html">David John Wilson</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <!-- <li class="active"><a href="#">Home</a></li> -->
+          <li><a href="../developer/index.html">Developer</a></li>
+          <li><a href="../researcher/index.html">Researcher</a></li>
+          <li><a href="../reviewer/index.html">Reviewer</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container theme-showcase" role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron jumbotron-subpage">
+      <div class="container">
+        <h1>Data.</small></h1>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2>What can we gleam from data?</h2>
+      </div>
+      <div class="panel-body">
+        <p>I am constantly fascinated about the amount of data that our technology-driven society produces. The creation of so much data offers a myriad of both problems and opportunities.</p>
+        <p>One of the hardest parts of working with data is its extraction and sanitization. It is perfectly reasonable to be working on a data set that consists of billions of entries, and without smart techniques to obtain, store, and work with this data any analysis will be inefficient or impossible.</p>
+        <p>Once a data set has been obtained, then analysis can begin to see what can be inferred from the data. Initially this may involve computing various metrics and statistics related to the data set. With more sophisticated techniques, however, it is possible to extend this analysis to predict behaviour of hypothetical data (in the future or outside of the data's environment). These predictions can be validated and tested against, given enough time or data, and can be useful for many applications.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>Portfolio</h3>
+      <p>Below is a portfolio of data analyses I have conducted. Whilst many are on a small scale, the aim is to gradually work with larger data sets. </p>
+
+      <h3>The Royal Ballet</h3>
+
+      <p>The Royal Opera House provides a huge amount of data through its online <a href="http://rohcollections.org.uk/" target="_blank">ROH Collections</a> website. Whilst not in the most computer-readable format, it is possible to download some really interesting statistics from the site.</p>
+      <p><i>All of the following data is regarding performances by The Royal Ballet in the Royal Opera House, between 1952 and 2012. The analysis is done for my own personal interest and is not endorsed by the Royal Opera House.</i></p>
+
+      <div class="chart choreoschart">
+        <h4>Choreographers by Total # of pieces</h4>
+        <h5>(Includes Main Stage, Linbury Theatre, and Clore Studio)</h5>
+        <p>The following is a list of the top 9 choreographers for the Royal Ballet, by total number of pieces in The Royal Ballet repertoire. Unsurprisingly, Sir Kenneth MacMillan and Sir Frederick Ashton are the two leading choreographers: a fitting position for the two men who undisputedly had the greatest influence over The Royal Ballet choreographically. Both choreographers also choreographer many short works and gala pieces, leading to their complete domination over the rankings.</p>
+        <p>A little more surprising is the lead of Ashley Page and William Tuckett over more prominant choreographers such as Balanchine, although this can be explained with the inclusion of Linbury Theatre and Clore Studio performances. <b>Without Clore/Linbury what is the number?</b></p>
+        <p>It is also reassuring to see the three current resident choreographers (Wayne McGregor, Christopher Wheeldon, Liam Scarlett) in the list, all around the same ranking, although Wheeldon and Scarlett boosted by choreographic pieces in Draft Works and whilst at the Royal Ballet School.</p>
+        <p>Finally, the exclusion of Petipa is surprising until one realises that whilst his pieces are heavily performed (the top three spots for number of performances are the Petipa-Tchaikovsky ballets), they are few in number. He only just missed the list, having 9 pieces and holding a joint position with many other choreographers.</p>
+      </div>
+    </br></br>
+
+      <div class="chart pieceschart">
+        <h4>Pieces by Total # of Performances</h4>
+        <h5>(Includes all performances in ROH)</h5>
+        <p>It was clear that the Petipa-Tchaikovsky trifecta (<i>Sleeping Beauty</i>, <i>Swan Lake</i>, <i>Nutcracker</i>) would be among the most performed ballets at the Royal Opera House, and it is not surprising that <i>The Sleeping Beauty</i> holds the top spot. Arguably the Royal's signature piece, it's been performed on average nearly 7 times a season. Making the assumption that it's performed about every other season, that means an average run of 14 performaces - pretty staggering! </p>
+        <p><i>Swan Lake</i> comes a very close second, and should technically come top of the board: there are 26 performances for "<i>Le Lac des cygnes</i>" from the beginning years - which make a total of 434 performances when included. It is surprising that the festive favourite <i>Nutcracker</i> is quite a way behind these two, with <i>Romeo &amp; Juliet</i> just a single performance behind.</p>
+        <p>MacMillan and Ashton both fittingly have 3 ballets in the top 10. MacMillan has his three dramatic full-length works (<i>Romeo &amp; Juliet</i>, <i>Manon</i>, and <i>Mayerling</i>) whilst Ashton's works are much lighter (<i>Cinderella</i>, <i>The Dream</i>, and <i>La Fille mal Gardee</i>).</p>
+      </div>
+    </br></br>
+
+      <div class="chart segmentschart">
+        <h4>Highlights of Top-5 Ballets by Total # of Hours</h4>
+        <h5>(When performed as part of complete ballet)</h5>
+        <p>For a little fun, let's have a look at how many hours are spent performing certain key sections in each of the top 5 ballets.</p>
+        <p>First up is the section that Deborah Bull described as "quite simply, the most terrifying dance in the ballet repertoire": The Rose Adagio from <i>The Sleeping Beauty</i>. Featuring eight show-stopping attitude balances, Aurora courts with four Princes her parents have gathered from around the world, accompanied by some of Tchaikovsky's most sumptious and celebratory ballet music. So how long in total have the Royal Ballet spent performing the Rose Adagio? Assuming the average Rose Adagio takes around 6 minutes this totals to a leg-trembling 41 hours and 3288 balances!</p>
+        <p>Swan Lake's luscious White Swan Pas de Deux Adagio is one of the most beautiful sections of partnerwork in classical ballet. Expressing Odette and Siegfried's love whilst never betraying her avian movements, the pas de deux takes around 9 minutes: meaning The Royal Ballet has spent over 61 hours on this part alone! Similarly, the Act II Grand Pas de Deux in <i>The Nutcracker</i> has taken 43 hours.</p>
+        <p>One of my favourite moments in any ballet is the Balcony Scene in MacMillan's <i>Romeo &amp; Juliet</i>. The combination of the music, emotion, and choreography steals my heart every time, and I would happily watch all 45 hours of it that The Royal Ballet have performed! I don't know if watching all 30 hours of Giselle's Mad Scene would be a good idea for my mental health though!</p>
+      </div>
+    </br></br>
+
+    <div>
+      <h4>MacMillan &amp; Ashton</h4>
+      <p>Now we compare MacMillan and Ashton.</p>
+      <div class="chart macmillanchart">
+        <h5>Top 5 MacMillan Pieces (Double check all R&amp;J are MacM)</h5>
+      </div>
+
+      <div class="chart ashtonchart">
+        <h5>Top 5 Ashton Pieces (Double check all Cinderellas are Ashton)</h5>
+      </div></br></br>
+    </div>
+
+    </div>
+
+  </div>
+
+</div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/bootstrap/assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../bower_components/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    <script src="../bower_components/d3/d3.min.js"  charset="utf-8"></script>
+    <script src="charts.js"></script>
+    </body>
+</html>
