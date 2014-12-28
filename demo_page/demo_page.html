@@ -20,6 +20,8 @@
   <!-- Custom styles for this template -->
 <link href="../theme.css" rel="stylesheet">
 <link href="chartstheme.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
 
   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -127,6 +129,19 @@
 
     </div>
 
+<div id="divPieceChoreo">
+  <p>Click on the graph title to switch from Top 20 Choreographers to Top 20 Pieces.</p>
+
+  <br>
+  <br>
+
+</div>
+
+
+  <div id="tooltipPieceChoreo" class="hidden">
+    <p><strong><span id="namePieceChoreo">Important Label Heading</span></strong></p>
+    <p><span id="valuePieceChoreo">100</span></p>
+  </div>
     </div>
 
   </div>
@@ -145,5 +160,6 @@
 
     <script src="../bower_components/d3/d3.min.js"  charset="utf-8"></script>
     <script src="charts.js"></script>
+    <script src="interactivechart.js"></script>    
     </body>
 </html>
