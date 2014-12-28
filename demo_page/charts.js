@@ -62,3 +62,15 @@ d3.select(".ashtonchart")
   .enter().append("div")
     .style("width", function(d) { return ashtonx(d[1]) + "px"; })
     .text(function(d) { return d[0] + "  -  " + d[1] + " performances"; });   
+
+
+var topchoreos = [	['Kenneth MacMillan', 49,[['Romeo and Juliet', 272], ['Manon', 174], ['Mayerling', 95], ['Song of the Earth', 84],['The Rite of Spring', 74]]],
+					['Frederick Ashton', 37,[['Cinderella', 170], ['The Dream', 125], ['La Fille mal gardee', 97], ['Les Patineurs', 90], ['Tales of Beatrix Potter', 89]]],
+					['Ashley Page', 19,[]],
+					['William Tuckett', 18,[]],
+					['George Balanchine', 16,[]],
+					['Christopher Wheeldon', 14,[]],
+					['David Bintley', 14,[]],
+					['Liam Scarlett', 14,[]],
+					['Wayne McGregor', 10,[]]  
+				  ];
