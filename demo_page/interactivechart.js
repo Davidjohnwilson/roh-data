@@ -8,7 +8,7 @@
 					console.log(error);
 				} else {
 
-					var choreosvg = d3.select("#divPieceChoreo").append("svg")
+					var choreosvg = d3.select("#svgPieceChoreo")
 					h = 500;
 					w = 1000;
 					choreosvg.attr("width",w).attr("height",h);
@@ -60,7 +60,7 @@
 					.range([w,0]);
 					var colorScaleChoreo = d3.scale.sqrt()
 					.domain([0,max_data_choreo])
-					.rangeRound([50,255]);
+					.rangeRound([50,200]);
 					var xOrdinalScaleChoreo = d3.scale.ordinal()
 					.domain(d3.range(thischoreodata.length))
 					.rangeRoundBands([0,w],0.05);
@@ -88,8 +88,6 @@
 					.rangeRoundBands([0,w],0.05);
 
 
-
-
 					var rects = choreosvg.selectAll("rect")
 					.data(thischoreodata)
 					.enter()
@@ -112,7 +110,6 @@
 					.attr({
 						x: function(d,i) { return xOrdinalScaleChoreo(i)+xOrdinalScaleChoreo.rangeBand() / 2;},
 						y: function(d) { return h - yScaleChoreo(d[1])+14; },
-						"font-family": "sans-serif",
 						"font-size": "11px",
 						fill: "white",
 						"text-anchor": "middle"
@@ -123,7 +120,6 @@
 											 .attr({
 											 	x: w-400,
 											 	y: 50,
-											 	"font-family": "sans-serif",
 												"font-size": "30px",
 												fill: "navy"
 											 });
@@ -134,7 +130,6 @@
 												x: w-400,
 											 	y: 85,
 											 	width: "350px",
-											 	"font-family": "sans-serif",
 												"font-size": "20px",
 												fill: "navy"				
 										});
