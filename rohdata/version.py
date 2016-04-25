@@ -25,7 +25,7 @@ CLASSIFIERS = ["Development Status :: 3 - Alpha",
                "Topic :: Scientific/Engineering"]
 
 # Description should be a one-liner:
-description = "rohdata: a project to analyze Royal Opera House data, written in Python"
+description = "rohdata: a Python project to analyze Royal Opera House data"
 # Long description will go up on the pypi page
 long_description = """
 rohdata
